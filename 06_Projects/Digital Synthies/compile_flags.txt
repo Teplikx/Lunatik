@@ -1,0 +1,4 @@
+-xc
+-std=c99
+-Wall
+-I/opt/homebrew/opt/raylib/include

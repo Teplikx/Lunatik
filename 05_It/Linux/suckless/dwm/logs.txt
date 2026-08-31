@@ -1,0 +1,187 @@
+
+
+
+
+=====================================
+Logs of build. Date: 2026-07-28 19:15:20
+=====================================
+rm -f dwm drw.o dwm.o util.o dwm-6.8.tar.gz
+cp config.def.h config.h
+cc -c -std=c99 -pedantic -Wall -Wno-deprecated-declarations -Os -I/usr/X11R6/include -I/usr/include/freetype2 -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_XOPEN_SOURCE=700L -DVERSION=\"6.8\" -DXINERAMA drw.c
+cc -c -std=c99 -pedantic -Wall -Wno-deprecated-declarations -Os -I/usr/X11R6/include -I/usr/include/freetype2 -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_XOPEN_SOURCE=700L -DVERSION=\"6.8\" -DXINERAMA dwm.c
+In file included from dwm.c:273:
+config.h:27:29: warning: ISO C forbids empty initializer braces before C23 [-Wpedantic]
+   27 | static const Rule rules[] = {
+      |                             ^
+config.h:27:19: error: zero or negative size array ‘rules’
+   27 | static const Rule rules[] = {
+      |                   ^~~~~
+dwm.c:1729:1: warning: ‘togglebar’ defined but not used [-Wunused-function]
+ 1729 | togglebar(const Arg *arg)
+      | ^~~~~~~~~
+dwm.c:1693:1: warning: ‘tagmon’ defined but not used [-Wunused-function]
+ 1693 | tagmon(const Arg *arg)
+      | ^~~~~~
+dwm.c:1514:1: warning: ‘setgaps’ defined but not used [-Wunused-function]
+ 1514 | setgaps(const Arg *arg)
+      | ^~~~~~~
+dwm.c:827:1: warning: ‘focusmon’ defined but not used [-Wunused-function]
+  827 | focusmon(const Arg *arg)
+      | ^~~~~~~~
+make: *** [Makefile:12: dwm.o] Error 1
+
+
+
+=====================================
+Logs of build. Date: 2026-07-28 19:16:10
+=====================================
+rm -f dwm drw.o dwm.o util.o dwm-6.8.tar.gz
+cp config.def.h config.h
+cc -c -std=c99 -pedantic -Wall -Wno-deprecated-declarations -Os -I/usr/X11R6/include -I/usr/include/freetype2 -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_XOPEN_SOURCE=700L -DVERSION=\"6.8\" -DXINERAMA drw.c
+cc -c -std=c99 -pedantic -Wall -Wno-deprecated-declarations -Os -I/usr/X11R6/include -I/usr/include/freetype2 -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_XOPEN_SOURCE=700L -DVERSION=\"6.8\" -DXINERAMA dwm.c
+dwm.c:1729:1: warning: ‘togglebar’ defined but not used [-Wunused-function]
+ 1729 | togglebar(const Arg *arg)
+      | ^~~~~~~~~
+dwm.c:1693:1: warning: ‘tagmon’ defined but not used [-Wunused-function]
+ 1693 | tagmon(const Arg *arg)
+      | ^~~~~~
+dwm.c:1514:1: warning: ‘setgaps’ defined but not used [-Wunused-function]
+ 1514 | setgaps(const Arg *arg)
+      | ^~~~~~~
+dwm.c:827:1: warning: ‘focusmon’ defined but not used [-Wunused-function]
+  827 | focusmon(const Arg *arg)
+      | ^~~~~~~~
+cc -c -std=c99 -pedantic -Wall -Wno-deprecated-declarations -Os -I/usr/X11R6/include -I/usr/include/freetype2 -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_XOPEN_SOURCE=700L -DVERSION=\"6.8\" -DXINERAMA util.c
+cc -o dwm drw.o dwm.o util.o -L/usr/X11R6/lib -lX11 -lXinerama -lfontconfig -lXft
+mkdir -p /usr/local/bin
+cp -f dwm /usr/local/bin
+chmod 755 /usr/local/bin/dwm
+mkdir -p /usr/local/share/man/man1
+sed "s/VERSION/6.8/g" < dwm.1 > /usr/local/share/man/man1/dwm.1
+chmod 644 /usr/local/share/man/man1/dwm.1
+
+
+
+=====================================
+Logs of build. Date: 2026-07-29 19:49:07
+=====================================
+rm -f dwm drw.o dwm.o util.o dwm-6.8.tar.gz
+cp config.def.h config.h
+cc -c -std=c99 -pedantic -Wall -Wno-deprecated-declarations -Os -I/usr/X11R6/include -I/usr/include/freetype2 -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_XOPEN_SOURCE=700L -DVERSION=\"6.8\" -DXINERAMA drw.c
+cc -c -std=c99 -pedantic -Wall -Wno-deprecated-declarations -Os -I/usr/X11R6/include -I/usr/include/freetype2 -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_XOPEN_SOURCE=700L -DVERSION=\"6.8\" -DXINERAMA dwm.c
+dwm.c:1729:1: warning: ‘togglebar’ defined but not used [-Wunused-function]
+ 1729 | togglebar(const Arg *arg)
+      | ^~~~~~~~~
+dwm.c:1693:1: warning: ‘tagmon’ defined but not used [-Wunused-function]
+ 1693 | tagmon(const Arg *arg)
+      | ^~~~~~
+dwm.c:1514:1: warning: ‘setgaps’ defined but not used [-Wunused-function]
+ 1514 | setgaps(const Arg *arg)
+      | ^~~~~~~
+dwm.c:827:1: warning: ‘focusmon’ defined but not used [-Wunused-function]
+  827 | focusmon(const Arg *arg)
+      | ^~~~~~~~
+cc -c -std=c99 -pedantic -Wall -Wno-deprecated-declarations -Os -I/usr/X11R6/include -I/usr/include/freetype2 -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_XOPEN_SOURCE=700L -DVERSION=\"6.8\" -DXINERAMA util.c
+cc -o dwm drw.o dwm.o util.o -L/usr/X11R6/lib -lX11 -lXinerama -lfontconfig -lXft
+mkdir -p /usr/local/bin
+cp -f dwm /usr/local/bin
+chmod 755 /usr/local/bin/dwm
+mkdir -p /usr/local/share/man/man1
+sed "s/VERSION/6.8/g" < dwm.1 > /usr/local/share/man/man1/dwm.1
+chmod 644 /usr/local/share/man/man1/dwm.1
+
+
+
+=====================================
+Logs of build. Date: 2026-08-01 13:17:48
+=====================================
+rm -f dwm drw.o dwm.o util.o dwm-6.8.tar.gz
+cp config.def.h config.h
+cc -c -std=c99 -pedantic -Wall -Wno-deprecated-declarations -Os -I/usr/X11R6/include -I/usr/include/freetype2 -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_XOPEN_SOURCE=700L -DVERSION=\"6.8\" -DXINERAMA drw.c
+cc -c -std=c99 -pedantic -Wall -Wno-deprecated-declarations -Os -I/usr/X11R6/include -I/usr/include/freetype2 -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_XOPEN_SOURCE=700L -DVERSION=\"6.8\" -DXINERAMA dwm.c
+dwm.c:1731:1: warning: ‘togglebar’ defined but not used [-Wunused-function]
+ 1731 | togglebar(const Arg *arg)
+      | ^~~~~~~~~
+dwm.c:1695:1: warning: ‘tagmon’ defined but not used [-Wunused-function]
+ 1695 | tagmon(const Arg *arg)
+      | ^~~~~~
+dwm.c:1516:1: warning: ‘setgaps’ defined but not used [-Wunused-function]
+ 1516 | setgaps(const Arg *arg)
+      | ^~~~~~~
+dwm.c:827:1: warning: ‘focusmon’ defined but not used [-Wunused-function]
+  827 | focusmon(const Arg *arg)
+      | ^~~~~~~~
+cc -c -std=c99 -pedantic -Wall -Wno-deprecated-declarations -Os -I/usr/X11R6/include -I/usr/include/freetype2 -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_XOPEN_SOURCE=700L -DVERSION=\"6.8\" -DXINERAMA util.c
+cc -o dwm drw.o dwm.o util.o -L/usr/X11R6/lib -lX11 -lXinerama -lfontconfig -lXft
+mkdir -p /usr/local/bin
+cp -f dwm /usr/local/bin
+chmod 755 /usr/local/bin/dwm
+mkdir -p /usr/local/share/man/man1
+sed "s/VERSION/6.8/g" < dwm.1 > /usr/local/share/man/man1/dwm.1
+chmod 644 /usr/local/share/man/man1/dwm.1
+
+
+
+=====================================
+Logs of build. Date: 2026-08-22 09:52:51
+=====================================
+rm -f dwm drw.o dwm.o util.o dwm-6.8.tar.gz
+cp config.def.h config.h
+cc -c -std=c99 -pedantic -Wall -Wno-deprecated-declarations -Os -I/usr/X11R6/include -I/usr/include/freetype2 -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_XOPEN_SOURCE=700L -DVERSION=\"6.8\" -DXINERAMA drw.c
+cc -c -std=c99 -pedantic -Wall -Wno-deprecated-declarations -Os -I/usr/X11R6/include -I/usr/include/freetype2 -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_XOPEN_SOURCE=700L -DVERSION=\"6.8\" -DXINERAMA dwm.c
+dwm.c:1731:1: warning: ‘togglebar’ defined but not used [-Wunused-function]
+ 1731 | togglebar(const Arg *arg)
+      | ^~~~~~~~~
+dwm.c:1695:1: warning: ‘tagmon’ defined but not used [-Wunused-function]
+ 1695 | tagmon(const Arg *arg)
+      | ^~~~~~
+dwm.c:1516:1: warning: ‘setgaps’ defined but not used [-Wunused-function]
+ 1516 | setgaps(const Arg *arg)
+      | ^~~~~~~
+dwm.c:827:1: warning: ‘focusmon’ defined but not used [-Wunused-function]
+  827 | focusmon(const Arg *arg)
+      | ^~~~~~~~
+cc -c -std=c99 -pedantic -Wall -Wno-deprecated-declarations -Os -I/usr/X11R6/include -I/usr/include/freetype2 -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_XOPEN_SOURCE=700L -DVERSION=\"6.8\" -DXINERAMA util.c
+cc -o dwm drw.o dwm.o util.o -L/usr/X11R6/lib -lX11 -lXinerama -lfontconfig -lXft
+mkdir -p /usr/local/bin
+cp -f dwm /usr/local/bin
+chmod 755 /usr/local/bin/dwm
+mkdir -p /usr/local/share/man/man1
+sed "s/VERSION/6.8/g" < dwm.1 > /usr/local/share/man/man1/dwm.1
+chmod 644 /usr/local/share/man/man1/dwm.1
+rm -f dwm drw.o dwm.o util.o dwm-6.8.tar.gz
+cp config.def.h config.h
+cc -c -std=c99 -pedantic -Wall -Wno-deprecated-declarations -Os -I/usr/X11R6/include -I/usr/include/freetype2 -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_XOPEN_SOURCE=700L -DVERSION=\"6.8\" -DXINERAMA drw.c
+cc -c -std=c99 -pedantic -Wall -Wno-deprecated-declarations -Os -I/usr/X11R6/include -I/usr/include/freetype2 -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_XOPEN_SOURCE=700L -DVERSION=\"6.8\" -DXINERAMA dwm.c
+cc -c -std=c99 -pedantic -Wall -Wno-deprecated-declarations -Os -I/usr/X11R6/include -I/usr/include/freetype2 -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_XOPEN_SOURCE=700L -DVERSION=\"6.8\" -DXINERAMA util.c
+cc -o dwm drw.o dwm.o util.o -L/usr/X11R6/lib -lX11 -lXinerama -lfontconfig -lXft
+mkdir -p /usr/local/bin
+cp -f dwm /usr/local/bin
+chmod 755 /usr/local/bin/dwm
+mkdir -p /usr/local/share/man/man1
+sed "s/VERSION/6.8/g" < dwm.1 > /usr/local/share/man/man1/dwm.1
+chmod 644 /usr/local/share/man/man1/dwm.1
+rm -f dwm drw.o dwm.o util.o dwm-6.8.tar.gz
+cp config.def.h config.h
+cc -c -std=c99 -pedantic -Wall -Wno-deprecated-declarations -Os -I/usr/X11R6/include -I/usr/include/freetype2 -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_XOPEN_SOURCE=700L -DVERSION=\"6.8\" -DXINERAMA drw.c
+cc -c -std=c99 -pedantic -Wall -Wno-deprecated-declarations -Os -I/usr/X11R6/include -I/usr/include/freetype2 -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_XOPEN_SOURCE=700L -DVERSION=\"6.8\" -DXINERAMA dwm.c
+cc -c -std=c99 -pedantic -Wall -Wno-deprecated-declarations -Os -I/usr/X11R6/include -I/usr/include/freetype2 -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_XOPEN_SOURCE=700L -DVERSION=\"6.8\" -DXINERAMA util.c
+cc -o dwm drw.o dwm.o util.o -L/usr/X11R6/lib -lX11 -lXinerama -lfontconfig -lXft
+mkdir -p /usr/local/bin
+cp -f dwm /usr/local/bin
+chmod 755 /usr/local/bin/dwm
+mkdir -p /usr/local/share/man/man1
+sed "s/VERSION/6.8/g" < dwm.1 > /usr/local/share/man/man1/dwm.1
+chmod 644 /usr/local/share/man/man1/dwm.1
+rm -f dwm drw.o dwm.o util.o dwm-6.8.tar.gz
+cp config.def.h config.h
+cc -c -std=c99 -pedantic -Wall -Wno-deprecated-declarations -Os -I/usr/X11R6/include -I/usr/include/freetype2 -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_XOPEN_SOURCE=700L -DVERSION=\"6.8\" -DXINERAMA drw.c
+cc -c -std=c99 -pedantic -Wall -Wno-deprecated-declarations -Os -I/usr/X11R6/include -I/usr/include/freetype2 -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_XOPEN_SOURCE=700L -DVERSION=\"6.8\" -DXINERAMA dwm.c
+cc -c -std=c99 -pedantic -Wall -Wno-deprecated-declarations -Os -I/usr/X11R6/include -I/usr/include/freetype2 -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_XOPEN_SOURCE=700L -DVERSION=\"6.8\" -DXINERAMA util.c
+cc -o dwm drw.o dwm.o util.o -L/usr/X11R6/lib -lX11 -lXinerama -lfontconfig -lXft
+mkdir -p /usr/local/bin
+cp -f dwm /usr/local/bin
+chmod 755 /usr/local/bin/dwm
+mkdir -p /usr/local/share/man/man1
+sed "s/VERSION/6.8/g" < dwm.1 > /usr/local/share/man/man1/dwm.1
+chmod 644 /usr/local/share/man/man1/dwm.1

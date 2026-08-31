@@ -1,0 +1,237 @@
+{
+  "main": {
+    "id": "6b9370067b111573",
+    "type": "split",
+    "children": [
+      {
+        "id": "f40a6821e85d0890",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "21459b7667744f71",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Main.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Main"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a5e55e32f0bf9f44",
+    "type": "split",
+    "children": [
+      {
+        "id": "0bfde0982f421865",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9e5c8114234fb432",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Файловий менеджер"
+            }
+          },
+          {
+            "id": "3e895c8877409845",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "4cd24ca429577071",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300.5
+  },
+  "right": {
+    "id": "2ba8452c5cf5fb36",
+    "type": "split",
+    "children": [
+      {
+        "id": "94a5270a1912f3fc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d744cae7dfdc7958",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Welcome.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Welcome"
+            }
+          },
+          {
+            "id": "4c6e4d30af551fa6",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Welcome.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Welcome"
+            }
+          },
+          {
+            "id": "973d2cb25754e0a6",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "fa7f4b5f50e975be",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "97b9f35cb787ed27",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Welcome.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Welcome"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Відкрити провідник файлів": false,
+      "graph:Граф": false,
+      "canvas:Створити нове полотно": false,
+      "daily-notes:Сьогоднішня нотатка": false,
+      "templates:Вставити шаблон": false,
+      "command-palette:Відкрити меню команд": false,
+      "bases:Створити нову базу": false
+    }
+  },
+  "active": "21459b7667744f71",
+  "lastOpenFiles": [
+    "06_Projects/06_Projects.md",
+    "Main.md",
+    "07_Data/07_Data.md",
+    "07_Data/Паролі.md",
+    "04_Books/04_Books.md",
+    "06_Projects/Digital Synthies/notes/Concept.md",
+    "06_Projects/Digital Synthies/Keybinds_Lite-XL.md",
+    "06_Projects/Digital Synthies/README.md",
+    "06_Projects/Digital Synthies/notes",
+    "04_Books/raylib_cheatsheet_v6.0.pdf",
+    "05_It/Linux/suckless/slstatus/components/cat.o",
+    "05_It/Linux/suckless/slstatus/components/battery.o",
+    "05_It/Linux/suckless/slstatus/slstatus.o",
+    "05_It/Linux/suckless/slstatus/config.h",
+    "05_It/Linux/suckless/dwm/dwm",
+    "05_It/Linux/suckless/dwm/util.o",
+    "05_It/Linux/suckless/dwm/dwm.o",
+    "05_It/Linux/suckless/dwm/drw.o",
+    "Без назви.md",
+    "05_It/05_It.md",
+    "04_Games/04_Games.md",
+    "03_Playlist/03_Playlist.md",
+    "01_Archive/01_Archive.md",
+    "01_Archive/03_Дати.md",
+    "01_Archive/02_Історії.md",
+    "08_Data/Історії.md",
+    "08_Data/Дати.md",
+    "02_Dairy/02_Diary.md",
+    "02_Dairy/Розклад.md",
+    "02_Dairy/Детокс.md",
+    "02_Dairy/Графік.md",
+    "00_Inbox/00_Inbox.md",
+    "01_Archive/00_2026/raid_reallyworld/Рейд Ріліворлда.md",
+    "01_Archive/01_2026/01_2026.md",
+    "01_Archive/01_Day R/Day R, good bye!.md",
+    "01_Archive/01_Day R/Day R.md",
+    "05_It/Linux/Wallpapers/wp7645220-melancholy-wallpapers.jpg",
+    "05_It/Linux/Wallpapers/wp7645057-melancholy-wallpapers.jpg",
+    "05_It/Linux/Wallpapers/wall_secondary.png",
+    "05_It/Linux/Wallpapers/leaves-hard-pixelated.png",
+    "05_It/Linux/Wallpapers/gruvbox_image31.png",
+    "Wallpapers/wp7645220-melancholy-wallpapers.jpg",
+    "Wallpapers/wp7645057-melancholy-wallpapers.jpg",
+    "Wallpapers/wall_secondary.png",
+    "Wallpapers/leaves-hard-pixelated.png",
+    "Wallpapers/gruvbox_image31.png"
+  ]
+}

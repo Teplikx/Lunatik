@@ -1,0 +1,82 @@
+
+
+
+=====================================
+Logs of build. Date: 2026-07-31 18:22:16
+=====================================
+rm -f dmenu stest drw.o dmenu.o stest.o util.o dmenu-5.4.tar.gz
+cp config.def.h config.h
+cc -c -std=c99 -pedantic -Wall -Os -I/usr/X11R6/include -I/usr/include/freetype2 -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_XOPEN_SOURCE=700 -D_POSIX_C_SOURCE=200809L -DVERSION=\"5.4\" -DXINERAMA dmenu.c
+cc -c -std=c99 -pedantic -Wall -Os -I/usr/X11R6/include -I/usr/include/freetype2 -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_XOPEN_SOURCE=700 -D_POSIX_C_SOURCE=200809L -DVERSION=\"5.4\" -DXINERAMA drw.c
+cc -c -std=c99 -pedantic -Wall -Os -I/usr/X11R6/include -I/usr/include/freetype2 -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_XOPEN_SOURCE=700 -D_POSIX_C_SOURCE=200809L -DVERSION=\"5.4\" -DXINERAMA util.c
+cc -o dmenu dmenu.o drw.o util.o -L/usr/X11R6/lib -lX11 -lXinerama -lfontconfig -lXft
+cc -c -std=c99 -pedantic -Wall -Os -I/usr/X11R6/include -I/usr/include/freetype2 -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_XOPEN_SOURCE=700 -D_POSIX_C_SOURCE=200809L -DVERSION=\"5.4\" -DXINERAMA stest.c
+cc -o stest stest.o -L/usr/X11R6/lib -lX11 -lXinerama -lfontconfig -lXft
+mkdir -p /usr/local/bin
+cp -f dmenu dmenu_path dmenu_run stest /usr/local/bin
+chmod 755 /usr/local/bin/dmenu
+chmod 755 /usr/local/bin/dmenu_path
+chmod 755 /usr/local/bin/dmenu_run
+chmod 755 /usr/local/bin/stest
+mkdir -p /usr/local/share/man/man1
+sed "s/VERSION/5.4/g" < dmenu.1 > /usr/local/share/man/man1/dmenu.1
+sed "s/VERSION/5.4/g" < stest.1 > /usr/local/share/man/man1/stest.1
+chmod 644 /usr/local/share/man/man1/dmenu.1
+chmod 644 /usr/local/share/man/man1/stest.1
+rm -f dmenu stest drw.o dmenu.o stest.o util.o dmenu-5.4.tar.gz
+cp config.def.h config.h
+cc -c -std=c99 -pedantic -Wall -Os -I/usr/X11R6/include -I/usr/include/freetype2 -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_XOPEN_SOURCE=700 -D_POSIX_C_SOURCE=200809L -DVERSION=\"5.4\" -DXINERAMA dmenu.c
+cc -c -std=c99 -pedantic -Wall -Os -I/usr/X11R6/include -I/usr/include/freetype2 -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_XOPEN_SOURCE=700 -D_POSIX_C_SOURCE=200809L -DVERSION=\"5.4\" -DXINERAMA drw.c
+cc -c -std=c99 -pedantic -Wall -Os -I/usr/X11R6/include -I/usr/include/freetype2 -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_XOPEN_SOURCE=700 -D_POSIX_C_SOURCE=200809L -DVERSION=\"5.4\" -DXINERAMA util.c
+cc -o dmenu dmenu.o drw.o util.o -L/usr/X11R6/lib -lX11 -lXinerama -lfontconfig -lXft
+cc -c -std=c99 -pedantic -Wall -Os -I/usr/X11R6/include -I/usr/include/freetype2 -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_XOPEN_SOURCE=700 -D_POSIX_C_SOURCE=200809L -DVERSION=\"5.4\" -DXINERAMA stest.c
+cc -o stest stest.o -L/usr/X11R6/lib -lX11 -lXinerama -lfontconfig -lXft
+mkdir -p /usr/local/bin
+cp -f dmenu dmenu_path dmenu_run stest /usr/local/bin
+chmod 755 /usr/local/bin/dmenu
+chmod 755 /usr/local/bin/dmenu_path
+chmod 755 /usr/local/bin/dmenu_run
+chmod 755 /usr/local/bin/stest
+mkdir -p /usr/local/share/man/man1
+sed "s/VERSION/5.4/g" < dmenu.1 > /usr/local/share/man/man1/dmenu.1
+sed "s/VERSION/5.4/g" < stest.1 > /usr/local/share/man/man1/stest.1
+chmod 644 /usr/local/share/man/man1/dmenu.1
+chmod 644 /usr/local/share/man/man1/stest.1
+rm -f dmenu stest drw.o dmenu.o stest.o util.o dmenu-5.4.tar.gz
+cp config.def.h config.h
+cc -c -std=c99 -pedantic -Wall -Os -I/usr/X11R6/include -I/usr/include/freetype2 -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_XOPEN_SOURCE=700 -D_POSIX_C_SOURCE=200809L -DVERSION=\"5.4\" -DXINERAMA dmenu.c
+cc -c -std=c99 -pedantic -Wall -Os -I/usr/X11R6/include -I/usr/include/freetype2 -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_XOPEN_SOURCE=700 -D_POSIX_C_SOURCE=200809L -DVERSION=\"5.4\" -DXINERAMA drw.c
+cc -c -std=c99 -pedantic -Wall -Os -I/usr/X11R6/include -I/usr/include/freetype2 -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_XOPEN_SOURCE=700 -D_POSIX_C_SOURCE=200809L -DVERSION=\"5.4\" -DXINERAMA util.c
+cc -o dmenu dmenu.o drw.o util.o -L/usr/X11R6/lib -lX11 -lXinerama -lfontconfig -lXft
+cc -c -std=c99 -pedantic -Wall -Os -I/usr/X11R6/include -I/usr/include/freetype2 -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_XOPEN_SOURCE=700 -D_POSIX_C_SOURCE=200809L -DVERSION=\"5.4\" -DXINERAMA stest.c
+cc -o stest stest.o -L/usr/X11R6/lib -lX11 -lXinerama -lfontconfig -lXft
+mkdir -p /usr/local/bin
+cp -f dmenu dmenu_path dmenu_run stest /usr/local/bin
+chmod 755 /usr/local/bin/dmenu
+chmod 755 /usr/local/bin/dmenu_path
+chmod 755 /usr/local/bin/dmenu_run
+chmod 755 /usr/local/bin/stest
+mkdir -p /usr/local/share/man/man1
+sed "s/VERSION/5.4/g" < dmenu.1 > /usr/local/share/man/man1/dmenu.1
+sed "s/VERSION/5.4/g" < stest.1 > /usr/local/share/man/man1/stest.1
+chmod 644 /usr/local/share/man/man1/dmenu.1
+chmod 644 /usr/local/share/man/man1/stest.1
+rm -f dmenu stest drw.o dmenu.o stest.o util.o dmenu-5.4.tar.gz
+cp config.def.h config.h
+cc -c -std=c99 -pedantic -Wall -Os -I/usr/X11R6/include -I/usr/include/freetype2 -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_XOPEN_SOURCE=700 -D_POSIX_C_SOURCE=200809L -DVERSION=\"5.4\" -DXINERAMA dmenu.c
+cc -c -std=c99 -pedantic -Wall -Os -I/usr/X11R6/include -I/usr/include/freetype2 -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_XOPEN_SOURCE=700 -D_POSIX_C_SOURCE=200809L -DVERSION=\"5.4\" -DXINERAMA drw.c
+cc -c -std=c99 -pedantic -Wall -Os -I/usr/X11R6/include -I/usr/include/freetype2 -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_XOPEN_SOURCE=700 -D_POSIX_C_SOURCE=200809L -DVERSION=\"5.4\" -DXINERAMA util.c
+cc -o dmenu dmenu.o drw.o util.o -L/usr/X11R6/lib -lX11 -lXinerama -lfontconfig -lXft
+cc -c -std=c99 -pedantic -Wall -Os -I/usr/X11R6/include -I/usr/include/freetype2 -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_XOPEN_SOURCE=700 -D_POSIX_C_SOURCE=200809L -DVERSION=\"5.4\" -DXINERAMA stest.c
+cc -o stest stest.o -L/usr/X11R6/lib -lX11 -lXinerama -lfontconfig -lXft
+mkdir -p /usr/local/bin
+cp -f dmenu dmenu_path dmenu_run stest /usr/local/bin
+chmod 755 /usr/local/bin/dmenu
+chmod 755 /usr/local/bin/dmenu_path
+chmod 755 /usr/local/bin/dmenu_run
+chmod 755 /usr/local/bin/stest
+mkdir -p /usr/local/share/man/man1
+sed "s/VERSION/5.4/g" < dmenu.1 > /usr/local/share/man/man1/dmenu.1
+sed "s/VERSION/5.4/g" < stest.1 > /usr/local/share/man/man1/stest.1
+chmod 644 /usr/local/share/man/man1/dmenu.1
+chmod 644 /usr/local/share/man/man1/stest.1

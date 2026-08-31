@@ -1,0 +1,8 @@
+[[00_Inbox]]
+[[01_Archive]]
+[[02_Diary]]
+[[03_Playlist]]
+[[04_Books]]
+[[05_It]]
+[[06_Projects]]
+[[07_Data]]

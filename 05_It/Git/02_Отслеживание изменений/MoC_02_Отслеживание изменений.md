@@ -1,0 +1,5 @@
+[[00_The Staging Area]]
+[[01_Git Add]]
+[[02_Git Commit]]
+[[03_Git Log]]
+[[04_Изменение отслеживаемого файла]]

@@ -1,0 +1,119 @@
+
+
+
+=====================================
+Logs of build. Date: 2026-08-01 13:10:49
+=====================================
+rm -f st st.o x.o st-0.9.3.tar.gz
+cp config.def.h config.h
+c99 -I/usr/X11R6/include  `pkg-config --cflags fontconfig`  `pkg-config --cflags freetype2` -DVERSION=\"0.9.3\" -D_XOPEN_SOURCE=600  -O1 -c st.c
+c99 -I/usr/X11R6/include  `pkg-config --cflags fontconfig`  `pkg-config --cflags freetype2` -DVERSION=\"0.9.3\" -D_XOPEN_SOURCE=600  -O1 -c x.c
+c99 -o st st.o x.o -L/usr/X11R6/lib -lm -lrt -lX11 -lutil -lXft  `pkg-config --libs fontconfig`  `pkg-config --libs freetype2` 
+mkdir -p /usr/local/bin
+cp -f st /usr/local/bin
+chmod 755 /usr/local/bin/st
+mkdir -p /usr/local/share/man/man1
+sed "s/VERSION/0.9.3/g" < st.1 > /usr/local/share/man/man1/st.1
+chmod 644 /usr/local/share/man/man1/st.1
+tic -sx st.info
+7 entries written to /usr/share/terminfo
+Please see the README file regarding the terminfo entry of st.
+
+
+
+=====================================
+Logs of build. Date: 2026-08-03 16:49:08
+=====================================
+rm -f st st.o x.o st-0.9.3.tar.gz
+cp config.def.h config.h
+c99 -I/usr/X11R6/include  `pkg-config --cflags fontconfig`  `pkg-config --cflags freetype2` -DVERSION=\"0.9.3\" -D_XOPEN_SOURCE=600  -O1 -c st.c
+c99 -I/usr/X11R6/include  `pkg-config --cflags fontconfig`  `pkg-config --cflags freetype2` -DVERSION=\"0.9.3\" -D_XOPEN_SOURCE=600  -O1 -c x.c
+c99 -o st st.o x.o -L/usr/X11R6/lib -lm -lrt -lX11 -lutil -lXft  `pkg-config --libs fontconfig`  `pkg-config --libs freetype2` 
+mkdir -p /usr/local/bin
+cp -f st /usr/local/bin
+chmod 755 /usr/local/bin/st
+mkdir -p /usr/local/share/man/man1
+sed "s/VERSION/0.9.3/g" < st.1 > /usr/local/share/man/man1/st.1
+chmod 644 /usr/local/share/man/man1/st.1
+tic -sx st.info
+7 entries written to /usr/share/terminfo
+Please see the README file regarding the terminfo entry of st.
+
+
+
+=====================================
+Logs of build. Date: 2026-08-03 16:50:25
+=====================================
+rm -f st st.o x.o st-0.9.3.tar.gz
+cp config.def.h config.h
+c99 -I/usr/X11R6/include  `pkg-config --cflags fontconfig`  `pkg-config --cflags freetype2` -DVERSION=\"0.9.3\" -D_XOPEN_SOURCE=600  -O1 -c st.c
+c99 -I/usr/X11R6/include  `pkg-config --cflags fontconfig`  `pkg-config --cflags freetype2` -DVERSION=\"0.9.3\" -D_XOPEN_SOURCE=600  -O1 -c x.c
+c99 -o st st.o x.o -L/usr/X11R6/lib -lm -lrt -lX11 -lutil -lXft  `pkg-config --libs fontconfig`  `pkg-config --libs freetype2` 
+mkdir -p /usr/local/bin
+cp -f st /usr/local/bin
+chmod 755 /usr/local/bin/st
+mkdir -p /usr/local/share/man/man1
+sed "s/VERSION/0.9.3/g" < st.1 > /usr/local/share/man/man1/st.1
+chmod 644 /usr/local/share/man/man1/st.1
+tic -sx st.info
+7 entries written to /usr/share/terminfo
+Please see the README file regarding the terminfo entry of st.
+
+
+
+=====================================
+Logs of build. Date: 2026-08-03 16:51:22
+=====================================
+rm -f st st.o x.o st-0.9.3.tar.gz
+cp config.def.h config.h
+c99 -I/usr/X11R6/include  `pkg-config --cflags fontconfig`  `pkg-config --cflags freetype2` -DVERSION=\"0.9.3\" -D_XOPEN_SOURCE=600  -O1 -c st.c
+c99 -I/usr/X11R6/include  `pkg-config --cflags fontconfig`  `pkg-config --cflags freetype2` -DVERSION=\"0.9.3\" -D_XOPEN_SOURCE=600  -O1 -c x.c
+c99 -o st st.o x.o -L/usr/X11R6/lib -lm -lrt -lX11 -lutil -lXft  `pkg-config --libs fontconfig`  `pkg-config --libs freetype2` 
+mkdir -p /usr/local/bin
+cp -f st /usr/local/bin
+chmod 755 /usr/local/bin/st
+mkdir -p /usr/local/share/man/man1
+sed "s/VERSION/0.9.3/g" < st.1 > /usr/local/share/man/man1/st.1
+chmod 644 /usr/local/share/man/man1/st.1
+tic -sx st.info
+7 entries written to /usr/share/terminfo
+Please see the README file regarding the terminfo entry of st.
+rm -f st st.o x.o st-0.9.3.tar.gz
+cp config.def.h config.h
+c99 -I/usr/X11R6/include  `pkg-config --cflags fontconfig`  `pkg-config --cflags freetype2` -DVERSION=\"0.9.3\" -D_XOPEN_SOURCE=600  -O1 -c st.c
+c99 -I/usr/X11R6/include  `pkg-config --cflags fontconfig`  `pkg-config --cflags freetype2` -DVERSION=\"0.9.3\" -D_XOPEN_SOURCE=600  -O1 -c x.c
+c99 -o st st.o x.o -L/usr/X11R6/lib -lm -lrt -lX11 -lutil -lXft  `pkg-config --libs fontconfig`  `pkg-config --libs freetype2` 
+mkdir -p /usr/local/bin
+cp -f st /usr/local/bin
+chmod 755 /usr/local/bin/st
+mkdir -p /usr/local/share/man/man1
+sed "s/VERSION/0.9.3/g" < st.1 > /usr/local/share/man/man1/st.1
+chmod 644 /usr/local/share/man/man1/st.1
+tic -sx st.info
+Please see the README file regarding the terminfo entry of st.
+rm -f st st.o x.o st-0.9.3.tar.gz
+cp config.def.h config.h
+c99 -I/usr/X11R6/include  `pkg-config --cflags fontconfig`  `pkg-config --cflags freetype2` -DVERSION=\"0.9.3\" -D_XOPEN_SOURCE=600  -O1 -c st.c
+c99 -I/usr/X11R6/include  `pkg-config --cflags fontconfig`  `pkg-config --cflags freetype2` -DVERSION=\"0.9.3\" -D_XOPEN_SOURCE=600  -O1 -c x.c
+c99 -o st st.o x.o -L/usr/X11R6/lib -lm -lrt -lX11 -lutil -lXft  `pkg-config --libs fontconfig`  `pkg-config --libs freetype2` 
+mkdir -p /usr/local/bin
+cp -f st /usr/local/bin
+chmod 755 /usr/local/bin/st
+mkdir -p /usr/local/share/man/man1
+sed "s/VERSION/0.9.3/g" < st.1 > /usr/local/share/man/man1/st.1
+chmod 644 /usr/local/share/man/man1/st.1
+tic -sx st.info
+Please see the README file regarding the terminfo entry of st.
+rm -f st st.o x.o st-0.9.3.tar.gz
+cp config.def.h config.h
+c99 -I/usr/X11R6/include  `pkg-config --cflags fontconfig`  `pkg-config --cflags freetype2` -DVERSION=\"0.9.3\" -D_XOPEN_SOURCE=600  -O1 -c st.c
+c99 -I/usr/X11R6/include  `pkg-config --cflags fontconfig`  `pkg-config --cflags freetype2` -DVERSION=\"0.9.3\" -D_XOPEN_SOURCE=600  -O1 -c x.c
+c99 -o st st.o x.o -L/usr/X11R6/lib -lm -lrt -lX11 -lutil -lXft  `pkg-config --libs fontconfig`  `pkg-config --libs freetype2` 
+mkdir -p /usr/local/bin
+cp -f st /usr/local/bin
+chmod 755 /usr/local/bin/st
+mkdir -p /usr/local/share/man/man1
+sed "s/VERSION/0.9.3/g" < st.1 > /usr/local/share/man/man1/st.1
+chmod 644 /usr/local/share/man/man1/st.1
+tic -sx st.info
+Please see the README file regarding the terminfo entry of st.

@@ -1,0 +1,654 @@
+
+
+
+=====================================
+Logs of build. Date: 2026-07-31 18:23:13
+=====================================
+rm -f slstatus slstatus.o components/battery.o components/cat.o components/cpu.o components/datetime.o components/disk.o components/entropy.o components/hostname.o components/ip.o components/kernel_release.o components/keyboard_indicators.o components/keymap.o components/load_avg.o components/netspeeds.o components/num_files.o components/ram.o components/run_command.o components/swap.o components/temperature.o components/uptime.o components/user.o components/volume.o components/wifi.o util.o slstatus-1.1.tar.gz
+cp config.def.h config.h
+cc -o slstatus.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os slstatus.c
+cc -o components/battery.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/battery.c
+cc -o components/cat.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/cat.c
+cc -o components/cpu.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/cpu.c
+cc -o components/datetime.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/datetime.c
+cc -o components/disk.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/disk.c
+cc -o components/entropy.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/entropy.c
+cc -o components/hostname.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/hostname.c
+cc -o components/ip.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/ip.c
+cc -o components/kernel_release.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/kernel_release.c
+cc -o components/keyboard_indicators.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/keyboard_indicators.c
+cc -o components/keymap.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/keymap.c
+cc -o components/load_avg.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/load_avg.c
+cc -o components/netspeeds.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/netspeeds.c
+cc -o components/num_files.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/num_files.c
+cc -o components/ram.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/ram.c
+cc -o components/run_command.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/run_command.c
+cc -o components/swap.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/swap.c
+cc -o components/temperature.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/temperature.c
+cc -o components/uptime.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/uptime.c
+cc -o components/user.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/user.c
+cc -o components/volume.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/volume.c
+cc -o components/wifi.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/wifi.c
+cc -o util.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os util.c
+cc -o slstatus -L/usr/X11R6/lib -s components/battery.o components/cat.o components/cpu.o components/datetime.o components/disk.o components/entropy.o components/hostname.o components/ip.o components/kernel_release.o components/keyboard_indicators.o components/keymap.o components/load_avg.o components/netspeeds.o components/num_files.o components/ram.o components/run_command.o components/swap.o components/temperature.o components/uptime.o components/user.o components/volume.o components/wifi.o util.o slstatus.o -lX11
+mkdir -p "/usr/local/bin"
+cp -f slstatus "/usr/local/bin"
+chmod 755 "/usr/local/bin/slstatus"
+mkdir -p "/usr/local/share/man/man1"
+cp -f slstatus.1 "/usr/local/share/man/man1"
+chmod 644 "/usr/local/share/man/man1/slstatus.1"
+
+
+
+=====================================
+Logs of build. Date: 2026-08-04 14:43:44
+=====================================
+rm -f slstatus slstatus.o components/battery.o components/cat.o components/cpu.o components/datetime.o components/disk.o components/entropy.o components/hostname.o components/ip.o components/kernel_release.o components/keyboard_indicators.o components/keymap.o components/load_avg.o components/netspeeds.o components/num_files.o components/ram.o components/run_command.o components/swap.o components/temperature.o components/uptime.o components/user.o components/volume.o components/wifi.o util.o slstatus-1.1.tar.gz
+cp config.def.h config.h
+cc -o slstatus.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os slstatus.c
+In file included from slstatus.c:24:
+config.h:9:1: error: stray ‘\302’ in program
+    9 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { battery_perc,<U+00A0> <U+00A0> " | BAT: %s%% | ", "BAT0" },
+      | ^~~~~~~~
+config.h:9:3: error: stray ‘\302’ in program
+    9 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { battery_perc,<U+00A0> <U+00A0> " | BAT: %s%% | ", "BAT0" },
+      |          ^~~~~~~~
+config.h:9:5: error: stray ‘\302’ in program
+    9 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { battery_perc,<U+00A0> <U+00A0> " | BAT: %s%% | ", "BAT0" },
+      |                   ^~~~~~~~
+config.h:9:7: error: stray ‘\302’ in program
+    9 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { battery_perc,<U+00A0> <U+00A0> " | BAT: %s%% | ", "BAT0" },
+      |                            ^~~~~~~~
+config.h:9:24: error: stray ‘\302’ in program
+    9 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { battery_perc,<U+00A0> <U+00A0> " | BAT: %s%% | ", "BAT0" },
+      |                                                    ^~~~~~~~
+config.h:9:26: error: stray ‘\302’ in program
+    9 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { battery_perc,<U+00A0> <U+00A0> " | BAT: %s%% | ", "BAT0" },
+      |                                                             ^~~~~~~~
+config.h:10:1: error: stray ‘\302’ in program
+   10 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { run_command,<U+00A0> <U+00A0> <U+00A0>"VOL: %s | ",<U+00A0> <U+00A0>"wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{printf \"%.0f%%\", $2 * 100}'" },
+      | ^~~~~~~~
+config.h:10:3: error: stray ‘\302’ in program
+   10 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { run_command,<U+00A0> <U+00A0> <U+00A0>"VOL: %s | ",<U+00A0> <U+00A0>"wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{printf \"%.0f%%\", $2 * 100}'" },
+      |          ^~~~~~~~
+config.h:10:5: error: stray ‘\302’ in program
+   10 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { run_command,<U+00A0> <U+00A0> <U+00A0>"VOL: %s | ",<U+00A0> <U+00A0>"wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{printf \"%.0f%%\", $2 * 100}'" },
+      |                   ^~~~~~~~
+config.h:10:7: error: stray ‘\302’ in program
+   10 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { run_command,<U+00A0> <U+00A0> <U+00A0>"VOL: %s | ",<U+00A0> <U+00A0>"wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{printf \"%.0f%%\", $2 * 100}'" },
+      |                            ^~~~~~~~
+config.h:10:23: error: stray ‘\302’ in program
+   10 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { run_command,<U+00A0> <U+00A0> <U+00A0>"VOL: %s | ",<U+00A0> <U+00A0>"wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{printf \"%.0f%%\", $2 * 100}'" },
+      |                                                   ^~~~~~~~
+config.h:10:25: error: stray ‘\302’ in program
+   10 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { run_command,<U+00A0> <U+00A0> <U+00A0>"VOL: %s | ",<U+00A0> <U+00A0>"wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{printf \"%.0f%%\", $2 * 100}'" },
+      |                                                            ^~~~~~~~
+config.h:10:27: error: stray ‘\302’ in program
+   10 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { run_command,<U+00A0> <U+00A0> <U+00A0>"VOL: %s | ",<U+00A0> <U+00A0>"wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{printf \"%.0f%%\", $2 * 100}'" },
+      |                                                                     ^~~~~~~~
+config.h:10:41: error: stray ‘\302’ in program
+   10 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { run_command,<U+00A0> <U+00A0> <U+00A0>"VOL: %s | ",<U+00A0> <U+00A0>"wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{printf \"%.0f%%\", $2 * 100}'" },
+      |                                                                                          ^~~~~~~~
+config.h:10:43: error: stray ‘\302’ in program
+   10 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { run_command,<U+00A0> <U+00A0> <U+00A0>"VOL: %s | ",<U+00A0> <U+00A0>"wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{printf \"%.0f%%\", $2 * 100}'" },
+      |                                                                                                   ^~~~~~~~
+config.h:11:1: error: stray ‘\302’ in program
+   11 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { keymap,<U+00A0> <U+00A0> <U+00A0> <U+00A0> <U+00A0> "LANG: %s | ",<U+00A0> NULL },
+      | ^~~~~~~~
+config.h:11:3: error: stray ‘\302’ in program
+   11 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { keymap,<U+00A0> <U+00A0> <U+00A0> <U+00A0> <U+00A0> "LANG: %s | ",<U+00A0> NULL },
+      |          ^~~~~~~~
+config.h:11:5: error: stray ‘\302’ in program
+   11 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { keymap,<U+00A0> <U+00A0> <U+00A0> <U+00A0> <U+00A0> "LANG: %s | ",<U+00A0> NULL },
+      |                   ^~~~~~~~
+config.h:11:7: error: stray ‘\302’ in program
+   11 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { keymap,<U+00A0> <U+00A0> <U+00A0> <U+00A0> <U+00A0> "LANG: %s | ",<U+00A0> NULL },
+      |                            ^~~~~~~~
+config.h:11:18: error: stray ‘\302’ in program
+   11 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { keymap,<U+00A0> <U+00A0> <U+00A0> <U+00A0> <U+00A0> "LANG: %s | ",<U+00A0> NULL },
+      |                                              ^~~~~~~~
+config.h:11:20: error: stray ‘\302’ in program
+   11 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { keymap,<U+00A0> <U+00A0> <U+00A0> <U+00A0> <U+00A0> "LANG: %s | ",<U+00A0> NULL },
+      |                                                       ^~~~~~~~
+config.h:11:22: error: stray ‘\302’ in program
+   11 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { keymap,<U+00A0> <U+00A0> <U+00A0> <U+00A0> <U+00A0> "LANG: %s | ",<U+00A0> NULL },
+      |                                                                ^~~~~~~~
+config.h:11:24: error: stray ‘\302’ in program
+   11 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { keymap,<U+00A0> <U+00A0> <U+00A0> <U+00A0> <U+00A0> "LANG: %s | ",<U+00A0> NULL },
+      |                                                                         ^~~~~~~~
+config.h:11:26: error: stray ‘\302’ in program
+   11 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { keymap,<U+00A0> <U+00A0> <U+00A0> <U+00A0> <U+00A0> "LANG: %s | ",<U+00A0> NULL },
+      |                                                                                  ^~~~~~~~
+config.h:11:42: error: stray ‘\302’ in program
+   11 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { keymap,<U+00A0> <U+00A0> <U+00A0> <U+00A0> <U+00A0> "LANG: %s | ",<U+00A0> NULL },
+      |                                                                                                         ^~~~~~~~
+config.h:12:1: error: stray ‘\302’ in program
+   12 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "TIME: %s | ",<U+00A0> "%H:%M" },
+      | ^~~~~~~~
+config.h:12:3: error: stray ‘\302’ in program
+   12 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "TIME: %s | ",<U+00A0> "%H:%M" },
+      |          ^~~~~~~~
+config.h:12:5: error: stray ‘\302’ in program
+   12 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "TIME: %s | ",<U+00A0> "%H:%M" },
+      |                   ^~~~~~~~
+config.h:12:7: error: stray ‘\302’ in program
+   12 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "TIME: %s | ",<U+00A0> "%H:%M" },
+      |                            ^~~~~~~~
+config.h:12:20: error: stray ‘\302’ in program
+   12 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "TIME: %s | ",<U+00A0> "%H:%M" },
+      |                                                ^~~~~~~~
+config.h:12:22: error: stray ‘\302’ in program
+   12 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "TIME: %s | ",<U+00A0> "%H:%M" },
+      |                                                         ^~~~~~~~
+config.h:12:24: error: stray ‘\302’ in program
+   12 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "TIME: %s | ",<U+00A0> "%H:%M" },
+      |                                                                  ^~~~~~~~
+config.h:12:26: error: stray ‘\302’ in program
+   12 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "TIME: %s | ",<U+00A0> "%H:%M" },
+      |                                                                           ^~~~~~~~
+config.h:12:42: error: stray ‘\302’ in program
+   12 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "TIME: %s | ",<U+00A0> "%H:%M" },
+      |                                                                                                  ^~~~~~~~
+config.h:13:1: error: stray ‘\302’ in program
+   13 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "DATE: %s | ",<U+00A0> <U+00A0> <U+00A0>"%F" },
+      | ^~~~~~~~
+config.h:13:3: error: stray ‘\302’ in program
+   13 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "DATE: %s | ",<U+00A0> <U+00A0> <U+00A0>"%F" },
+      |          ^~~~~~~~
+config.h:13:5: error: stray ‘\302’ in program
+   13 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "DATE: %s | ",<U+00A0> <U+00A0> <U+00A0>"%F" },
+      |                   ^~~~~~~~
+config.h:13:7: error: stray ‘\302’ in program
+   13 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "DATE: %s | ",<U+00A0> <U+00A0> <U+00A0>"%F" },
+      |                            ^~~~~~~~
+config.h:13:20: error: stray ‘\302’ in program
+   13 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "DATE: %s | ",<U+00A0> <U+00A0> <U+00A0>"%F" },
+      |                                                ^~~~~~~~
+config.h:13:22: error: stray ‘\302’ in program
+   13 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "DATE: %s | ",<U+00A0> <U+00A0> <U+00A0>"%F" },
+      |                                                         ^~~~~~~~
+config.h:13:24: error: stray ‘\302’ in program
+   13 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "DATE: %s | ",<U+00A0> <U+00A0> <U+00A0>"%F" },
+      |                                                                  ^~~~~~~~
+config.h:13:26: error: stray ‘\302’ in program
+   13 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "DATE: %s | ",<U+00A0> <U+00A0> <U+00A0>"%F" },
+      |                                                                           ^~~~~~~~
+config.h:13:42: error: stray ‘\302’ in program
+   13 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "DATE: %s | ",<U+00A0> <U+00A0> <U+00A0>"%F" },
+      |                                                                                                  ^~~~~~~~
+config.h:13:44: error: stray ‘\302’ in program
+   13 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "DATE: %s | ",<U+00A0> <U+00A0> <U+00A0>"%F" },
+      |                                                                                                           ^~~~~~~~
+config.h:13:46: error: stray ‘\302’ in program
+   13 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "DATE: %s | ",<U+00A0> <U+00A0> <U+00A0>"%F" },
+      |                                                                                                                    ^~~~~~~~
+make: *** [Makefile:38: slstatus.o] Error 1
+
+
+
+=====================================
+Logs of build. Date: 2026-08-04 14:44:09
+=====================================
+rm -f slstatus slstatus.o components/battery.o components/cat.o components/cpu.o components/datetime.o components/disk.o components/entropy.o components/hostname.o components/ip.o components/kernel_release.o components/keyboard_indicators.o components/keymap.o components/load_avg.o components/netspeeds.o components/num_files.o components/ram.o components/run_command.o components/swap.o components/temperature.o components/uptime.o components/user.o components/volume.o components/wifi.o util.o slstatus-1.1.tar.gz
+cp config.def.h config.h
+cc -o slstatus.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os slstatus.c
+In file included from slstatus.c:24:
+config.h:9:1: error: stray ‘\302’ in program
+    9 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { battery_perc,<U+00A0> <U+00A0> " | BAT: %s%% | ", "BAT0" },
+      | ^~~~~~~~
+config.h:9:3: error: stray ‘\302’ in program
+    9 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { battery_perc,<U+00A0> <U+00A0> " | BAT: %s%% | ", "BAT0" },
+      |          ^~~~~~~~
+config.h:9:5: error: stray ‘\302’ in program
+    9 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { battery_perc,<U+00A0> <U+00A0> " | BAT: %s%% | ", "BAT0" },
+      |                   ^~~~~~~~
+config.h:9:7: error: stray ‘\302’ in program
+    9 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { battery_perc,<U+00A0> <U+00A0> " | BAT: %s%% | ", "BAT0" },
+      |                            ^~~~~~~~
+config.h:9:24: error: stray ‘\302’ in program
+    9 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { battery_perc,<U+00A0> <U+00A0> " | BAT: %s%% | ", "BAT0" },
+      |                                                    ^~~~~~~~
+config.h:9:26: error: stray ‘\302’ in program
+    9 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { battery_perc,<U+00A0> <U+00A0> " | BAT: %s%% | ", "BAT0" },
+      |                                                             ^~~~~~~~
+config.h:10:1: error: stray ‘\302’ in program
+   10 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { run_command,<U+00A0> <U+00A0> <U+00A0>"VOL: %s | ",<U+00A0> <U+00A0>"wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{printf \"%.0f%%\", $2 * 100}'" },
+      | ^~~~~~~~
+config.h:10:3: error: stray ‘\302’ in program
+   10 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { run_command,<U+00A0> <U+00A0> <U+00A0>"VOL: %s | ",<U+00A0> <U+00A0>"wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{printf \"%.0f%%\", $2 * 100}'" },
+      |          ^~~~~~~~
+config.h:10:5: error: stray ‘\302’ in program
+   10 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { run_command,<U+00A0> <U+00A0> <U+00A0>"VOL: %s | ",<U+00A0> <U+00A0>"wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{printf \"%.0f%%\", $2 * 100}'" },
+      |                   ^~~~~~~~
+config.h:10:7: error: stray ‘\302’ in program
+   10 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { run_command,<U+00A0> <U+00A0> <U+00A0>"VOL: %s | ",<U+00A0> <U+00A0>"wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{printf \"%.0f%%\", $2 * 100}'" },
+      |                            ^~~~~~~~
+config.h:10:23: error: stray ‘\302’ in program
+   10 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { run_command,<U+00A0> <U+00A0> <U+00A0>"VOL: %s | ",<U+00A0> <U+00A0>"wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{printf \"%.0f%%\", $2 * 100}'" },
+      |                                                   ^~~~~~~~
+config.h:10:25: error: stray ‘\302’ in program
+   10 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { run_command,<U+00A0> <U+00A0> <U+00A0>"VOL: %s | ",<U+00A0> <U+00A0>"wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{printf \"%.0f%%\", $2 * 100}'" },
+      |                                                            ^~~~~~~~
+config.h:10:27: error: stray ‘\302’ in program
+   10 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { run_command,<U+00A0> <U+00A0> <U+00A0>"VOL: %s | ",<U+00A0> <U+00A0>"wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{printf \"%.0f%%\", $2 * 100}'" },
+      |                                                                     ^~~~~~~~
+config.h:10:41: error: stray ‘\302’ in program
+   10 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { run_command,<U+00A0> <U+00A0> <U+00A0>"VOL: %s | ",<U+00A0> <U+00A0>"wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{printf \"%.0f%%\", $2 * 100}'" },
+      |                                                                                          ^~~~~~~~
+config.h:10:43: error: stray ‘\302’ in program
+   10 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { run_command,<U+00A0> <U+00A0> <U+00A0>"VOL: %s | ",<U+00A0> <U+00A0>"wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{printf \"%.0f%%\", $2 * 100}'" },
+      |                                                                                                   ^~~~~~~~
+config.h:11:1: error: stray ‘\302’ in program
+   11 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { keymap,<U+00A0> <U+00A0> <U+00A0> <U+00A0> <U+00A0> "LANG: %s | ",<U+00A0> NULL },
+      | ^~~~~~~~
+config.h:11:3: error: stray ‘\302’ in program
+   11 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { keymap,<U+00A0> <U+00A0> <U+00A0> <U+00A0> <U+00A0> "LANG: %s | ",<U+00A0> NULL },
+      |          ^~~~~~~~
+config.h:11:5: error: stray ‘\302’ in program
+   11 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { keymap,<U+00A0> <U+00A0> <U+00A0> <U+00A0> <U+00A0> "LANG: %s | ",<U+00A0> NULL },
+      |                   ^~~~~~~~
+config.h:11:7: error: stray ‘\302’ in program
+   11 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { keymap,<U+00A0> <U+00A0> <U+00A0> <U+00A0> <U+00A0> "LANG: %s | ",<U+00A0> NULL },
+      |                            ^~~~~~~~
+config.h:11:18: error: stray ‘\302’ in program
+   11 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { keymap,<U+00A0> <U+00A0> <U+00A0> <U+00A0> <U+00A0> "LANG: %s | ",<U+00A0> NULL },
+      |                                              ^~~~~~~~
+config.h:11:20: error: stray ‘\302’ in program
+   11 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { keymap,<U+00A0> <U+00A0> <U+00A0> <U+00A0> <U+00A0> "LANG: %s | ",<U+00A0> NULL },
+      |                                                       ^~~~~~~~
+config.h:11:22: error: stray ‘\302’ in program
+   11 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { keymap,<U+00A0> <U+00A0> <U+00A0> <U+00A0> <U+00A0> "LANG: %s | ",<U+00A0> NULL },
+      |                                                                ^~~~~~~~
+config.h:11:24: error: stray ‘\302’ in program
+   11 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { keymap,<U+00A0> <U+00A0> <U+00A0> <U+00A0> <U+00A0> "LANG: %s | ",<U+00A0> NULL },
+      |                                                                         ^~~~~~~~
+config.h:11:26: error: stray ‘\302’ in program
+   11 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { keymap,<U+00A0> <U+00A0> <U+00A0> <U+00A0> <U+00A0> "LANG: %s | ",<U+00A0> NULL },
+      |                                                                                  ^~~~~~~~
+config.h:11:42: error: stray ‘\302’ in program
+   11 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { keymap,<U+00A0> <U+00A0> <U+00A0> <U+00A0> <U+00A0> "LANG: %s | ",<U+00A0> NULL },
+      |                                                                                                         ^~~~~~~~
+config.h:12:1: error: stray ‘\302’ in program
+   12 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "TIME: %s | ",<U+00A0> "%H:%M" },
+      | ^~~~~~~~
+config.h:12:3: error: stray ‘\302’ in program
+   12 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "TIME: %s | ",<U+00A0> "%H:%M" },
+      |          ^~~~~~~~
+config.h:12:5: error: stray ‘\302’ in program
+   12 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "TIME: %s | ",<U+00A0> "%H:%M" },
+      |                   ^~~~~~~~
+config.h:12:7: error: stray ‘\302’ in program
+   12 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "TIME: %s | ",<U+00A0> "%H:%M" },
+      |                            ^~~~~~~~
+config.h:12:20: error: stray ‘\302’ in program
+   12 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "TIME: %s | ",<U+00A0> "%H:%M" },
+      |                                                ^~~~~~~~
+config.h:12:22: error: stray ‘\302’ in program
+   12 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "TIME: %s | ",<U+00A0> "%H:%M" },
+      |                                                         ^~~~~~~~
+config.h:12:24: error: stray ‘\302’ in program
+   12 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "TIME: %s | ",<U+00A0> "%H:%M" },
+      |                                                                  ^~~~~~~~
+config.h:12:26: error: stray ‘\302’ in program
+   12 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "TIME: %s | ",<U+00A0> "%H:%M" },
+      |                                                                           ^~~~~~~~
+config.h:12:42: error: stray ‘\302’ in program
+   12 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "TIME: %s | ",<U+00A0> "%H:%M" },
+      |                                                                                                  ^~~~~~~~
+config.h:13:1: error: stray ‘\302’ in program
+   13 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "DATE: %s | ",<U+00A0> <U+00A0> <U+00A0>"%F" },
+      | ^~~~~~~~
+config.h:13:3: error: stray ‘\302’ in program
+   13 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "DATE: %s | ",<U+00A0> <U+00A0> <U+00A0>"%F" },
+      |          ^~~~~~~~
+config.h:13:5: error: stray ‘\302’ in program
+   13 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "DATE: %s | ",<U+00A0> <U+00A0> <U+00A0>"%F" },
+      |                   ^~~~~~~~
+config.h:13:7: error: stray ‘\302’ in program
+   13 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "DATE: %s | ",<U+00A0> <U+00A0> <U+00A0>"%F" },
+      |                            ^~~~~~~~
+config.h:13:20: error: stray ‘\302’ in program
+   13 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "DATE: %s | ",<U+00A0> <U+00A0> <U+00A0>"%F" },
+      |                                                ^~~~~~~~
+config.h:13:22: error: stray ‘\302’ in program
+   13 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "DATE: %s | ",<U+00A0> <U+00A0> <U+00A0>"%F" },
+      |                                                         ^~~~~~~~
+config.h:13:24: error: stray ‘\302’ in program
+   13 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "DATE: %s | ",<U+00A0> <U+00A0> <U+00A0>"%F" },
+      |                                                                  ^~~~~~~~
+config.h:13:26: error: stray ‘\302’ in program
+   13 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "DATE: %s | ",<U+00A0> <U+00A0> <U+00A0>"%F" },
+      |                                                                           ^~~~~~~~
+config.h:13:42: error: stray ‘\302’ in program
+   13 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "DATE: %s | ",<U+00A0> <U+00A0> <U+00A0>"%F" },
+      |                                                                                                  ^~~~~~~~
+config.h:13:44: error: stray ‘\302’ in program
+   13 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "DATE: %s | ",<U+00A0> <U+00A0> <U+00A0>"%F" },
+      |                                                                                                           ^~~~~~~~
+config.h:13:46: error: stray ‘\302’ in program
+   13 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "DATE: %s | ",<U+00A0> <U+00A0> <U+00A0>"%F" },
+      |                                                                                                                    ^~~~~~~~
+make: *** [Makefile:38: slstatus.o] Error 1
+
+
+
+=====================================
+Logs of build. Date: 2026-08-04 14:45:00
+=====================================
+rm -f slstatus slstatus.o components/battery.o components/cat.o components/cpu.o components/datetime.o components/disk.o components/entropy.o components/hostname.o components/ip.o components/kernel_release.o components/keyboard_indicators.o components/keymap.o components/load_avg.o components/netspeeds.o components/num_files.o components/ram.o components/run_command.o components/swap.o components/temperature.o components/uptime.o components/user.o components/volume.o components/wifi.o util.o slstatus-1.1.tar.gz
+cp config.def.h config.h
+cc -o slstatus.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os slstatus.c
+In file included from slstatus.c:24:
+config.h:9:1: error: stray ‘\302’ in program
+    9 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { battery_perc,<U+00A0> <U+00A0> " | BAT: %s%% | ", "BAT0" },
+      | ^~~~~~~~
+config.h:9:3: error: stray ‘\302’ in program
+    9 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { battery_perc,<U+00A0> <U+00A0> " | BAT: %s%% | ", "BAT0" },
+      |          ^~~~~~~~
+config.h:9:5: error: stray ‘\302’ in program
+    9 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { battery_perc,<U+00A0> <U+00A0> " | BAT: %s%% | ", "BAT0" },
+      |                   ^~~~~~~~
+config.h:9:7: error: stray ‘\302’ in program
+    9 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { battery_perc,<U+00A0> <U+00A0> " | BAT: %s%% | ", "BAT0" },
+      |                            ^~~~~~~~
+config.h:9:24: error: stray ‘\302’ in program
+    9 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { battery_perc,<U+00A0> <U+00A0> " | BAT: %s%% | ", "BAT0" },
+      |                                                    ^~~~~~~~
+config.h:9:26: error: stray ‘\302’ in program
+    9 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { battery_perc,<U+00A0> <U+00A0> " | BAT: %s%% | ", "BAT0" },
+      |                                                             ^~~~~~~~
+config.h:10:1: error: stray ‘\302’ in program
+   10 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { run_command,<U+00A0> <U+00A0> <U+00A0>"VOL: %s | ",<U+00A0> <U+00A0>"wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{printf \"%.0f%%\", $2 * 100}'" },
+      | ^~~~~~~~
+config.h:10:3: error: stray ‘\302’ in program
+   10 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { run_command,<U+00A0> <U+00A0> <U+00A0>"VOL: %s | ",<U+00A0> <U+00A0>"wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{printf \"%.0f%%\", $2 * 100}'" },
+      |          ^~~~~~~~
+config.h:10:5: error: stray ‘\302’ in program
+   10 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { run_command,<U+00A0> <U+00A0> <U+00A0>"VOL: %s | ",<U+00A0> <U+00A0>"wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{printf \"%.0f%%\", $2 * 100}'" },
+      |                   ^~~~~~~~
+config.h:10:7: error: stray ‘\302’ in program
+   10 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { run_command,<U+00A0> <U+00A0> <U+00A0>"VOL: %s | ",<U+00A0> <U+00A0>"wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{printf \"%.0f%%\", $2 * 100}'" },
+      |                            ^~~~~~~~
+config.h:10:23: error: stray ‘\302’ in program
+   10 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { run_command,<U+00A0> <U+00A0> <U+00A0>"VOL: %s | ",<U+00A0> <U+00A0>"wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{printf \"%.0f%%\", $2 * 100}'" },
+      |                                                   ^~~~~~~~
+config.h:10:25: error: stray ‘\302’ in program
+   10 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { run_command,<U+00A0> <U+00A0> <U+00A0>"VOL: %s | ",<U+00A0> <U+00A0>"wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{printf \"%.0f%%\", $2 * 100}'" },
+      |                                                            ^~~~~~~~
+config.h:10:27: error: stray ‘\302’ in program
+   10 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { run_command,<U+00A0> <U+00A0> <U+00A0>"VOL: %s | ",<U+00A0> <U+00A0>"wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{printf \"%.0f%%\", $2 * 100}'" },
+      |                                                                     ^~~~~~~~
+config.h:10:41: error: stray ‘\302’ in program
+   10 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { run_command,<U+00A0> <U+00A0> <U+00A0>"VOL: %s | ",<U+00A0> <U+00A0>"wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{printf \"%.0f%%\", $2 * 100}'" },
+      |                                                                                          ^~~~~~~~
+config.h:10:43: error: stray ‘\302’ in program
+   10 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { run_command,<U+00A0> <U+00A0> <U+00A0>"VOL: %s | ",<U+00A0> <U+00A0>"wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{printf \"%.0f%%\", $2 * 100}'" },
+      |                                                                                                   ^~~~~~~~
+config.h:11:1: error: stray ‘\302’ in program
+   11 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { keymap,<U+00A0> <U+00A0> <U+00A0> <U+00A0> <U+00A0> "LANG: %s | ",<U+00A0> NULL },
+      | ^~~~~~~~
+config.h:11:3: error: stray ‘\302’ in program
+   11 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { keymap,<U+00A0> <U+00A0> <U+00A0> <U+00A0> <U+00A0> "LANG: %s | ",<U+00A0> NULL },
+      |          ^~~~~~~~
+config.h:11:5: error: stray ‘\302’ in program
+   11 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { keymap,<U+00A0> <U+00A0> <U+00A0> <U+00A0> <U+00A0> "LANG: %s | ",<U+00A0> NULL },
+      |                   ^~~~~~~~
+config.h:11:7: error: stray ‘\302’ in program
+   11 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { keymap,<U+00A0> <U+00A0> <U+00A0> <U+00A0> <U+00A0> "LANG: %s | ",<U+00A0> NULL },
+      |                            ^~~~~~~~
+config.h:11:18: error: stray ‘\302’ in program
+   11 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { keymap,<U+00A0> <U+00A0> <U+00A0> <U+00A0> <U+00A0> "LANG: %s | ",<U+00A0> NULL },
+      |                                              ^~~~~~~~
+config.h:11:20: error: stray ‘\302’ in program
+   11 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { keymap,<U+00A0> <U+00A0> <U+00A0> <U+00A0> <U+00A0> "LANG: %s | ",<U+00A0> NULL },
+      |                                                       ^~~~~~~~
+config.h:11:22: error: stray ‘\302’ in program
+   11 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { keymap,<U+00A0> <U+00A0> <U+00A0> <U+00A0> <U+00A0> "LANG: %s | ",<U+00A0> NULL },
+      |                                                                ^~~~~~~~
+config.h:11:24: error: stray ‘\302’ in program
+   11 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { keymap,<U+00A0> <U+00A0> <U+00A0> <U+00A0> <U+00A0> "LANG: %s | ",<U+00A0> NULL },
+      |                                                                         ^~~~~~~~
+config.h:11:26: error: stray ‘\302’ in program
+   11 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { keymap,<U+00A0> <U+00A0> <U+00A0> <U+00A0> <U+00A0> "LANG: %s | ",<U+00A0> NULL },
+      |                                                                                  ^~~~~~~~
+config.h:11:42: error: stray ‘\302’ in program
+   11 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { keymap,<U+00A0> <U+00A0> <U+00A0> <U+00A0> <U+00A0> "LANG: %s | ",<U+00A0> NULL },
+      |                                                                                                         ^~~~~~~~
+config.h:12:1: error: stray ‘\302’ in program
+   12 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "TIME: %s | ",<U+00A0> "%H:%M" },
+      | ^~~~~~~~
+config.h:12:3: error: stray ‘\302’ in program
+   12 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "TIME: %s | ",<U+00A0> "%H:%M" },
+      |          ^~~~~~~~
+config.h:12:5: error: stray ‘\302’ in program
+   12 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "TIME: %s | ",<U+00A0> "%H:%M" },
+      |                   ^~~~~~~~
+config.h:12:7: error: stray ‘\302’ in program
+   12 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "TIME: %s | ",<U+00A0> "%H:%M" },
+      |                            ^~~~~~~~
+config.h:12:20: error: stray ‘\302’ in program
+   12 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "TIME: %s | ",<U+00A0> "%H:%M" },
+      |                                                ^~~~~~~~
+config.h:12:22: error: stray ‘\302’ in program
+   12 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "TIME: %s | ",<U+00A0> "%H:%M" },
+      |                                                         ^~~~~~~~
+config.h:12:24: error: stray ‘\302’ in program
+   12 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "TIME: %s | ",<U+00A0> "%H:%M" },
+      |                                                                  ^~~~~~~~
+config.h:12:26: error: stray ‘\302’ in program
+   12 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "TIME: %s | ",<U+00A0> "%H:%M" },
+      |                                                                           ^~~~~~~~
+config.h:12:42: error: stray ‘\302’ in program
+   12 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "TIME: %s | ",<U+00A0> "%H:%M" },
+      |                                                                                                  ^~~~~~~~
+config.h:13:1: error: stray ‘\302’ in program
+   13 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "DATE: %s | ",<U+00A0> <U+00A0> <U+00A0>"%F" },
+      | ^~~~~~~~
+config.h:13:3: error: stray ‘\302’ in program
+   13 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "DATE: %s | ",<U+00A0> <U+00A0> <U+00A0>"%F" },
+      |          ^~~~~~~~
+config.h:13:5: error: stray ‘\302’ in program
+   13 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "DATE: %s | ",<U+00A0> <U+00A0> <U+00A0>"%F" },
+      |                   ^~~~~~~~
+config.h:13:7: error: stray ‘\302’ in program
+   13 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "DATE: %s | ",<U+00A0> <U+00A0> <U+00A0>"%F" },
+      |                            ^~~~~~~~
+config.h:13:20: error: stray ‘\302’ in program
+   13 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "DATE: %s | ",<U+00A0> <U+00A0> <U+00A0>"%F" },
+      |                                                ^~~~~~~~
+config.h:13:22: error: stray ‘\302’ in program
+   13 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "DATE: %s | ",<U+00A0> <U+00A0> <U+00A0>"%F" },
+      |                                                         ^~~~~~~~
+config.h:13:24: error: stray ‘\302’ in program
+   13 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "DATE: %s | ",<U+00A0> <U+00A0> <U+00A0>"%F" },
+      |                                                                  ^~~~~~~~
+config.h:13:26: error: stray ‘\302’ in program
+   13 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "DATE: %s | ",<U+00A0> <U+00A0> <U+00A0>"%F" },
+      |                                                                           ^~~~~~~~
+config.h:13:42: error: stray ‘\302’ in program
+   13 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "DATE: %s | ",<U+00A0> <U+00A0> <U+00A0>"%F" },
+      |                                                                                                  ^~~~~~~~
+config.h:13:44: error: stray ‘\302’ in program
+   13 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "DATE: %s | ",<U+00A0> <U+00A0> <U+00A0>"%F" },
+      |                                                                                                           ^~~~~~~~
+config.h:13:46: error: stray ‘\302’ in program
+   13 | <U+00A0> <U+00A0> <U+00A0> <U+00A0> { datetime,<U+00A0> <U+00A0> <U+00A0> <U+00A0> "DATE: %s | ",<U+00A0> <U+00A0> <U+00A0>"%F" },
+      |                                                                                                                    ^~~~~~~~
+make: *** [Makefile:38: slstatus.o] Error 1
+
+
+
+=====================================
+Logs of build. Date: 2026-08-04 14:45:14
+=====================================
+rm -f slstatus slstatus.o components/battery.o components/cat.o components/cpu.o components/datetime.o components/disk.o components/entropy.o components/hostname.o components/ip.o components/kernel_release.o components/keyboard_indicators.o components/keymap.o components/load_avg.o components/netspeeds.o components/num_files.o components/ram.o components/run_command.o components/swap.o components/temperature.o components/uptime.o components/user.o components/volume.o components/wifi.o util.o slstatus-1.1.tar.gz
+cp config.def.h config.h
+cc -o slstatus.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os slstatus.c
+cc -o components/battery.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/battery.c
+cc -o components/cat.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/cat.c
+cc -o components/cpu.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/cpu.c
+cc -o components/datetime.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/datetime.c
+cc -o components/disk.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/disk.c
+cc -o components/entropy.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/entropy.c
+cc -o components/hostname.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/hostname.c
+cc -o components/ip.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/ip.c
+cc -o components/kernel_release.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/kernel_release.c
+cc -o components/keyboard_indicators.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/keyboard_indicators.c
+cc -o components/keymap.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/keymap.c
+cc -o components/load_avg.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/load_avg.c
+cc -o components/netspeeds.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/netspeeds.c
+cc -o components/num_files.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/num_files.c
+cc -o components/ram.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/ram.c
+cc -o components/run_command.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/run_command.c
+cc -o components/swap.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/swap.c
+cc -o components/temperature.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/temperature.c
+cc -o components/uptime.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/uptime.c
+cc -o components/user.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/user.c
+cc -o components/volume.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/volume.c
+cc -o components/wifi.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/wifi.c
+cc -o util.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os util.c
+cc -o slstatus -L/usr/X11R6/lib -s components/battery.o components/cat.o components/cpu.o components/datetime.o components/disk.o components/entropy.o components/hostname.o components/ip.o components/kernel_release.o components/keyboard_indicators.o components/keymap.o components/load_avg.o components/netspeeds.o components/num_files.o components/ram.o components/run_command.o components/swap.o components/temperature.o components/uptime.o components/user.o components/volume.o components/wifi.o util.o slstatus.o -lX11
+mkdir -p "/usr/local/bin"
+cp -f slstatus "/usr/local/bin"
+chmod 755 "/usr/local/bin/slstatus"
+mkdir -p "/usr/local/share/man/man1"
+cp -f slstatus.1 "/usr/local/share/man/man1"
+chmod 644 "/usr/local/share/man/man1/slstatus.1"
+
+
+
+=====================================
+Logs of build. Date: 2026-08-19 16:45:18
+=====================================
+rm -f slstatus slstatus.o components/battery.o components/cat.o components/cpu.o components/datetime.o components/disk.o components/entropy.o components/hostname.o components/ip.o components/kernel_release.o components/keyboard_indicators.o components/keymap.o components/load_avg.o components/netspeeds.o components/num_files.o components/ram.o components/run_command.o components/swap.o components/temperature.o components/uptime.o components/user.o components/volume.o components/wifi.o util.o slstatus-1.1.tar.gz
+cp config.def.h config.h
+cc -o slstatus.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os slstatus.c
+cc -o components/battery.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/battery.c
+cc -o components/cat.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/cat.c
+cc -o components/cpu.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/cpu.c
+cc -o components/datetime.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/datetime.c
+cc -o components/disk.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/disk.c
+cc -o components/entropy.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/entropy.c
+cc -o components/hostname.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/hostname.c
+cc -o components/ip.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/ip.c
+cc -o components/kernel_release.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/kernel_release.c
+cc -o components/keyboard_indicators.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/keyboard_indicators.c
+cc -o components/keymap.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/keymap.c
+cc -o components/load_avg.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/load_avg.c
+cc -o components/netspeeds.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/netspeeds.c
+cc -o components/num_files.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/num_files.c
+cc -o components/ram.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/ram.c
+cc -o components/run_command.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/run_command.c
+cc -o components/swap.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/swap.c
+cc -o components/temperature.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/temperature.c
+cc -o components/uptime.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/uptime.c
+cc -o components/user.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/user.c
+cc -o components/volume.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/volume.c
+cc -o components/wifi.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/wifi.c
+cc -o util.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os util.c
+cc -o slstatus -L/usr/X11R6/lib -s components/battery.o components/cat.o components/cpu.o components/datetime.o components/disk.o components/entropy.o components/hostname.o components/ip.o components/kernel_release.o components/keyboard_indicators.o components/keymap.o components/load_avg.o components/netspeeds.o components/num_files.o components/ram.o components/run_command.o components/swap.o components/temperature.o components/uptime.o components/user.o components/volume.o components/wifi.o util.o slstatus.o -lX11
+mkdir -p "/usr/local/bin"
+cp -f slstatus "/usr/local/bin"
+chmod 755 "/usr/local/bin/slstatus"
+mkdir -p "/usr/local/share/man/man1"
+cp -f slstatus.1 "/usr/local/share/man/man1"
+chmod 644 "/usr/local/share/man/man1/slstatus.1"
+rm -f slstatus slstatus.o components/battery.o components/cat.o components/cpu.o components/datetime.o components/disk.o components/entropy.o components/hostname.o components/ip.o components/kernel_release.o components/keyboard_indicators.o components/keymap.o components/load_avg.o components/netspeeds.o components/num_files.o components/ram.o components/run_command.o components/swap.o components/temperature.o components/uptime.o components/user.o components/volume.o components/wifi.o util.o slstatus-1.1.tar.gz
+cp config.def.h config.h
+cc -o slstatus.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os slstatus.c
+cc -o components/battery.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/battery.c
+cc -o components/cat.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/cat.c
+cc -o components/cpu.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/cpu.c
+cc -o components/datetime.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/datetime.c
+cc -o components/disk.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/disk.c
+cc -o components/entropy.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/entropy.c
+cc -o components/hostname.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/hostname.c
+cc -o components/ip.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/ip.c
+cc -o components/kernel_release.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/kernel_release.c
+cc -o components/keyboard_indicators.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/keyboard_indicators.c
+cc -o components/keymap.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/keymap.c
+cc -o components/load_avg.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/load_avg.c
+cc -o components/netspeeds.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/netspeeds.c
+cc -o components/num_files.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/num_files.c
+cc -o components/ram.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/ram.c
+cc -o components/run_command.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/run_command.c
+cc -o components/swap.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/swap.c
+cc -o components/temperature.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/temperature.c
+cc -o components/uptime.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/uptime.c
+cc -o components/user.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/user.c
+cc -o components/volume.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/volume.c
+cc -o components/wifi.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/wifi.c
+cc -o util.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os util.c
+cc -o slstatus -L/usr/X11R6/lib -s components/battery.o components/cat.o components/cpu.o components/datetime.o components/disk.o components/entropy.o components/hostname.o components/ip.o components/kernel_release.o components/keyboard_indicators.o components/keymap.o components/load_avg.o components/netspeeds.o components/num_files.o components/ram.o components/run_command.o components/swap.o components/temperature.o components/uptime.o components/user.o components/volume.o components/wifi.o util.o slstatus.o -lX11
+mkdir -p "/usr/local/bin"
+cp -f slstatus "/usr/local/bin"
+chmod 755 "/usr/local/bin/slstatus"
+mkdir -p "/usr/local/share/man/man1"
+cp -f slstatus.1 "/usr/local/share/man/man1"
+chmod 644 "/usr/local/share/man/man1/slstatus.1"
+rm -f slstatus slstatus.o components/battery.o components/cat.o components/cpu.o components/datetime.o components/disk.o components/entropy.o components/hostname.o components/ip.o components/kernel_release.o components/keyboard_indicators.o components/keymap.o components/load_avg.o components/netspeeds.o components/num_files.o components/ram.o components/run_command.o components/swap.o components/temperature.o components/uptime.o components/user.o components/volume.o components/wifi.o util.o slstatus-1.1.tar.gz
+cp config.def.h config.h
+cc -o slstatus.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os slstatus.c
+cc -o components/battery.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/battery.c
+cc -o components/cat.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/cat.c
+cc -o components/cpu.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/cpu.c
+cc -o components/datetime.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/datetime.c
+cc -o components/disk.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/disk.c
+cc -o components/entropy.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/entropy.c
+cc -o components/hostname.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/hostname.c
+cc -o components/ip.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/ip.c
+cc -o components/kernel_release.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/kernel_release.c
+cc -o components/keyboard_indicators.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/keyboard_indicators.c
+cc -o components/keymap.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/keymap.c
+cc -o components/load_avg.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/load_avg.c
+cc -o components/netspeeds.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/netspeeds.c
+cc -o components/num_files.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/num_files.c
+cc -o components/ram.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/ram.c
+cc -o components/run_command.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/run_command.c
+cc -o components/swap.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/swap.c
+cc -o components/temperature.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/temperature.c
+cc -o components/uptime.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/uptime.c
+cc -o components/user.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/user.c
+cc -o components/volume.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/volume.c
+cc -o components/wifi.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/wifi.c
+cc -o util.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os util.c
+cc -o slstatus -L/usr/X11R6/lib -s components/battery.o components/cat.o components/cpu.o components/datetime.o components/disk.o components/entropy.o components/hostname.o components/ip.o components/kernel_release.o components/keyboard_indicators.o components/keymap.o components/load_avg.o components/netspeeds.o components/num_files.o components/ram.o components/run_command.o components/swap.o components/temperature.o components/uptime.o components/user.o components/volume.o components/wifi.o util.o slstatus.o -lX11
+mkdir -p "/usr/local/bin"
+cp -f slstatus "/usr/local/bin"
+chmod 755 "/usr/local/bin/slstatus"
+mkdir -p "/usr/local/share/man/man1"
+cp -f slstatus.1 "/usr/local/share/man/man1"
+chmod 644 "/usr/local/share/man/man1/slstatus.1"
+rm -f slstatus slstatus.o components/battery.o components/cat.o components/cpu.o components/datetime.o components/disk.o components/entropy.o components/hostname.o components/ip.o components/kernel_release.o components/keyboard_indicators.o components/keymap.o components/load_avg.o components/netspeeds.o components/num_files.o components/ram.o components/run_command.o components/swap.o components/temperature.o components/uptime.o components/user.o components/volume.o components/wifi.o util.o slstatus-1.1.tar.gz
+cp config.def.h config.h
+cc -o slstatus.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os slstatus.c
+cc -o components/battery.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/battery.c
+cc -o components/cat.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/cat.c
+cc -o components/cpu.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/cpu.c
+cc -o components/datetime.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/datetime.c
+cc -o components/disk.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/disk.c
+cc -o components/entropy.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/entropy.c
+cc -o components/hostname.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/hostname.c
+cc -o components/ip.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/ip.c
+cc -o components/kernel_release.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/kernel_release.c
+cc -o components/keyboard_indicators.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/keyboard_indicators.c
+cc -o components/keymap.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/keymap.c
+cc -o components/load_avg.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/load_avg.c
+cc -o components/netspeeds.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/netspeeds.c
+cc -o components/num_files.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/num_files.c
+cc -o components/ram.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/ram.c
+cc -o components/run_command.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/run_command.c
+cc -o components/swap.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/swap.c
+cc -o components/temperature.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/temperature.c
+cc -o components/uptime.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/uptime.c
+cc -o components/user.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/user.c
+cc -o components/volume.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/volume.c
+cc -o components/wifi.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os components/wifi.c
+cc -o util.o -c -I/usr/X11R6/include -D_DEFAULT_SOURCE -DVERSION=\"1.1\" -std=c99 -pedantic -Wall -Wextra -Wno-unused-parameter -Os util.c
+cc -o slstatus -L/usr/X11R6/lib -s components/battery.o components/cat.o components/cpu.o components/datetime.o components/disk.o components/entropy.o components/hostname.o components/ip.o components/kernel_release.o components/keyboard_indicators.o components/keymap.o components/load_avg.o components/netspeeds.o components/num_files.o components/ram.o components/run_command.o components/swap.o components/temperature.o components/uptime.o components/user.o components/volume.o components/wifi.o util.o slstatus.o -lX11
+mkdir -p "/usr/local/bin"
+cp -f slstatus "/usr/local/bin"
+chmod 755 "/usr/local/bin/slstatus"
+mkdir -p "/usr/local/share/man/man1"
+cp -f slstatus.1 "/usr/local/share/man/man1"
+chmod 644 "/usr/local/share/man/man1/slstatus.1"

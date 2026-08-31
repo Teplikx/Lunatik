@@ -1,0 +1,5 @@
+
+[Default Applications]
+application/vnd.powdertoy.save=powdertoy-uk.co.powdertoy.tpt.desktop
+x-scheme-handler/ptsave=powdertoy-uk.co.powdertoy.tpt.desktop
+x-scheme-handler/jetbrains=jetbrainsd.desktop

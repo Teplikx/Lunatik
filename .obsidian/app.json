@@ -1,0 +1,10 @@
+{
+  "promptDelete": false,
+  "spellcheck": false,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "00_Inbox",
+  "attachmentFolderPath": "00_Inbox",
+  "trashOption": "none",
+  "showInlineTitle": true,
+  "alwaysUpdateLinks": true
+}
