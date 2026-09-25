@@ -1,0 +1,249 @@
+{
+  "main": {
+    "id": "737d7759cd406048",
+    "type": "split",
+    "children": [
+      {
+        "id": "f56e890d6bde1c87",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f7b7391e6f1fc5e2",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          },
+          {
+            "id": "066190a4e084f354",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00_Inbox/Культ святих Вогнів.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Культ святих Вогнів"
+            }
+          },
+          {
+            "id": "013248bf7f249034",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00_Inbox/01_Enthusiasm.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "01_Enthusiasm"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "441199e804bcc38c",
+    "type": "split",
+    "children": [
+      {
+        "id": "987c95afca5658c4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c7a63ea7df1bef4e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "dcec8c2c36e75820",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Пошук"
+            }
+          },
+          {
+            "id": "00d399803bc20778",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Закладки"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "e0c44f7d734c3555",
+    "type": "split",
+    "children": [
+      {
+        "id": "567e37993459886a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "544e94ec9deebe3b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "03_Archive/04_Data.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Зворотні посилання"
+            }
+          },
+          {
+            "id": "18f8540df7b5509b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "03_Archive/04_Data.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Вихідні посилання"
+            }
+          },
+          {
+            "id": "1299ca77f2063789",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Мітки"
+            }
+          },
+          {
+            "id": "5654d8e43207450b",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Всі властивості"
+            }
+          },
+          {
+            "id": "d7a5debab11a2970",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "03_Archive/04_Data.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Вміст"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "013248bf7f249034",
+  "lastOpenFiles": [
+    "00_Inbox/Культ святих Вогнів.md",
+    "00_Inbox/01_Enthusiasm.md",
+    "03_Archive/04_Data.md",
+    "03_Archive/00_2024-2025/00_2024-2025.md",
+    "02_Entire/00_Playlist/Hope/02_Hide.m4a",
+    "02_Entire/01_Enthusiasm",
+    "02_Entire/00_Playlist/Hope/01_september.mp3",
+    "02_Entire/00_Playlist/Мій плейлист.md",
+    "02_Entire/00_Playlist/Focus",
+    "02_Entire/00_Playlist/Tough/Tough.md",
+    "02_Entire/00_Playlist/Hope/Hope.md",
+    "02_Entire/00_Playlist/Tough/STARSET - My Demons (OFFICIAL) [p-N_y1bZtRw].ogg",
+    "02_Entire/00_Playlist/Tough/Enemy - Tommee Profitt, Sam Tinnesz & Beacon Light [e-xToC9wNl0].ogg",
+    "00_Inbox/Шо за нахуй?.md",
+    "00_Inbox/Не справедливо.md",
+    "00_Inbox/Идея игри на Love2D - Lose Fight.md",
+    "00_Inbox/Игра Fantasty Tree.md",
+    "04_School/00_Дз/00_ДЗ.md",
+    "04_School/01_Конспекти/Укр літ/Місяць на небі.md",
+    "02_Entire/00_Playlist/Sad/04_zakat.ogg",
+    "02_Entire/00_Playlist/Tough/00_NTW.ogg",
+    "02_Entire/00_Playlist/Hope/00_molodist.ogg",
+    "02_Entire/00_Playlist/Sad/02_kaseta.ogg",
+    "04_School/01_Конспекти/Укр.мова/Період розвитку укр мови.md",
+    "04_School/01_Конспекти/Укр.мова/Конспект_Укр.мова.md",
+    "04_School/01_Конспекти/Фізік/Конспект_Фізік.md",
+    "04_School/01_Конспекти/Фізік/Конспект ( Електричний струм у металах).md",
+    "04_School/01_Конспекти/Історія України/Параграф 1.md",
+    "04_School/01_Конспекти/Історія України/Конспект_Історія України.md"
+  ]
+}
